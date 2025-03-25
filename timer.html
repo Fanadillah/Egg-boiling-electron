@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Egg Timer</title>
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Custom Title Bar -->
+  <div id="titlebar">
+    <button id="minimize-btn">_</button>
+    <button id="maximize-btn">[ ]</button>
+    <button id="close-btn">X</button>
+  </div>
+
+  <!-- Container Utama -->
+  <div class="container">
+    <h1>Egg Timer</h1>
+    <div id="egg-image">
+      <!-- Gambar telur akan dimuat di sini -->
+    </div>
+    <div id="timer">
+      <span id="minutes">00</span> : <span id="seconds">00</span>
+    </div>
+    <button id="cancel-btn">Batal</button>
+  </div>
+
+  <script src="timer.js"></script>
+</body>
+</html>

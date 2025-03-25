@@ -1,0 +1,85 @@
+/* Pastikan body dan html memenuhi tinggi dan lebar penuh */
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden; /* Menghilangkan scroll horizontal */
+  box-sizing: border-box;
+}
+
+/* Gaya dasar */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(45deg, #4b6cb7, #182848);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Custom Title Bar */
+#titlebar {
+  display: flex;
+  justify-content: flex-end;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  width: 100%;
+  -webkit-app-region: drag;
+}
+
+#titlebar button {
+  -webkit-app-region: no-drag;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+#titlebar button:hover {
+  color: #ccc;
+}
+
+/* Container Utama Diposisikan di Tengah Halaman */
+.container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+}
+
+/* Contoh styling untuk tombol dan timer */
+.timer-options {
+  margin-bottom: 20px;
+}
+
+.preset-btn, #cancel-btn {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.preset-btn:hover, #cancel-btn:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+#timer {
+  font-size: 3em;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+#egg-image img {
+  max-width: 200px;
+  margin-bottom: 20px;
+}

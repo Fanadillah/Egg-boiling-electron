@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Pilih Timer Telur</title>
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Custom Title Bar -->
+  <div id="titlebar">
+    <button id="minimize-btn">_</button>
+    <button id="maximize-btn">[ ]</button>
+    <button id="close-btn">X</button>
+  </div>
+
+  <!-- Container Utama -->
+  <div class="container">
+    <h1>Pilih Timer Telur</h1>
+    <div class="timer-options">
+      <button class="preset-btn" data-type="soft" data-time="240">Soft Boiled (4 menit)</button>
+      <button class="preset-btn" data-type="medium" data-time="360">Medium Boiled (6 menit)</button>
+      <button class="preset-btn" data-type="hard" data-time="600">Hard Boiled (10 menit)</button>
+    </div>
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
